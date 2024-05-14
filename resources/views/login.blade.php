@@ -5,13 +5,10 @@
 <div class="row justify-content-center mt-5">
     <div class="col-md-4 border p-4 rounded">
         <h1 class="h3 mb-3 fw-normal text-center">Halaman Register User</h1>
-
-        <!-- error message -->
         @if (session('error'))
             <div class="alert alert-danger">{{ session('error') }}</div>
         @endif
 
-        <!-- success message -->
         @if (session('success'))
             <div class="alert alert-success">{{ session('success') }}</div>
         @endif
@@ -35,8 +32,8 @@
                 @enderror
             </div>
 
-            <button type="submit" class="w-100 btn btn-lg btn-primary">Login</button>
-            <a href="{{ route('login_google') }}" class="w-100 btn btn-lg btn-danger mt-2">Login with Google</a>
+            <button type="submit" class="w-100 btn  btn-primary">Login</button>
+            <a href="{{ route('login_google') }}" class="w-100 btn  btn-warning mt-2">Login with Google</a>
         </form>
     </div>
 </div>
